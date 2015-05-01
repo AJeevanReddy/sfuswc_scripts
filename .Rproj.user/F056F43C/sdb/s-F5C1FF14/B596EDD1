@@ -1,0 +1,18 @@
+{
+    "contents" : "gapminder <- read.csv(\"gapminder-FiveYearData.csv\", stringsAsFactors = FALSE)\n\ncountry_list <- unique(gapminder$country)\n\ncountry_list[country_list == \"Canada\"]\n\n1:8 * 1:2\n\nnumber_machine <- function(n, talk = TRUE){\n  out <- runif(n)\n  if(talk){\n    print(\"i made you a number\")\n  }\n  return(out)\n}\n\nnumber_machine(2, talk = FALSE)\n\ntryme <- function(well){\n  if(well) stop(\"fuck\")\n}\n\n\nfib <- numeric(12)\nfib\nfib[1] <- 0\nfib[2] <- 1\n\nfor (i in 3:12){\n  fib[i] <- fib[i-1] + fib[i-2]\n}\n\n\ngm <- unique(gapminder$country)\n\nfor (i in gm){\n  dat <- gapminder[gapminder$country == i, ]\n  name <- paste0(\"countries/\", i, \".csv\")\n  write.csv(dat, name)\n}\n",
+    "created" : 1430521277376.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1226343712",
+    "id" : "B596EDD1",
+    "lastKnownWriteTime" : 1430494745,
+    "path" : "~/Desktop/data_R/data_R/R/noteses.R",
+    "project_path" : "noteses.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

@@ -1,0 +1,18 @@
+{
+    "contents" : "theargs <- commandArgs(trailingOnly = TRUE)\ncountryname <- theargs[1]\ngapminder <- read.csv(\"gapminder-FiveYearData.csv\")\n## plot some data\npdf(\"myplot.pdf\")\ngapminder2 <- gapminder[gapminder$country == countryname, ]\nplot(x = gapminder2$pop, y = gapminder2$lifeExp)\ndev.off()",
+    "created" : 1430521278487.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1971875623",
+    "id" : "5CFA94A",
+    "lastKnownWriteTime" : 1430502412,
+    "path" : "~/Desktop/data_R/data_R/R/myscript.R",
+    "project_path" : "myscript.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "type" : "r_source"
+}
